@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AddToHomeScreen from "@/app/components/add-to-home-screen/AddToHomeScreen";
 
 export default async function Home() {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
@@ -115,6 +116,7 @@ export default async function Home() {
           </p>
         </a>
       </div>
+      <AddToHomeScreen />
     </main>
   );
 }
